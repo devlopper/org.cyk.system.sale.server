@@ -20,6 +20,12 @@
 			<artifactId>sale-server-business-entities</artifactId>
 			<version>0.0.1</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.cyk.jee.utility.server.representation</groupId>
+			<artifactId>jee-utility-server-representation</artifactId>
+			<version>0.0.1</version>
+		</dependency>
 	</dependencies>		
 
 </project>
