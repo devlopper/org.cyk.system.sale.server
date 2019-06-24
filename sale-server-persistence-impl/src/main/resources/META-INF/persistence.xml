@@ -2,7 +2,14 @@
   
     <persistence-unit name="salePersistenceUnit" transaction-type="JTA">
     	<jta-data-source>${data.source.jndi.name}</jta-data-source>
+    	<class>org.cyk.system.sale.server.persistence.entities.Checkout</class>
+    	<class>org.cyk.system.sale.server.persistence.entities.CheckoutPeriod</class>
     	<class>org.cyk.system.sale.server.persistence.entities.Product</class>
+    	<class>org.cyk.system.sale.server.persistence.entities.Sale</class>
+    	<class>org.cyk.system.sale.server.persistence.entities.SaleProduct</class>
+    	<class>org.cyk.system.sale.server.persistence.entities.Store</class>
+    	<class>org.cyk.system.sale.server.persistence.entities.StoreProduct</class>
+    	<class>org.cyk.system.sale.server.persistence.entities.ValueAddedTax</class>
     	<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="${hibernate.hbm2ddl.auto}"/>
